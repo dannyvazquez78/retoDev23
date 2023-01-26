@@ -69,6 +69,67 @@ const get = async(referenciaHTML) => {
           </article>`)
         });
 
+
+        <div class="card">
+                    <img class="rounded-top" src="./images/img-3.webp" alt="cat photo">
+                    <div class="card-body">
+                        <div class="container">
+                            <div class="container">
+                                <img src="./images/img-4.jpeg" class="rounded-circle float-start me-4" style="width: 3rem;" alt="Tia Eastwood photo">
+                            </div>    
+                            <div class="container">
+                                <h5>
+                                    Necati Özmen
+                                </h5>
+                                <small>
+                                    Nov 19 • Originally published at refine.dev
+                                </small>
+                            </div>
+                        </div>
+                        <h1 class="card-title mt-2">
+                            <a href="#" id="title-link">
+                                How to Create Dynamic Forms in React CRUD app with Ant Design
+                            </a>    
+                        </h1>
+                        <div class="card-body">
+                            <a href="#" class="card-link text-muted text-decoration-none" id="hashtag-link">
+                                #webdev
+                            </a>
+                            <a href="#" class="card-link text-muted text-decoration-none" id="hashtag-link">
+                                #react
+                            </a>
+                            <a href="#" class="card-link text-muted text-decoration-none" id="hashtag-link">
+                                #tutorial
+                            </a>
+                            <a href="#" class="card-link text-muted text-decoration-none" id="hashtag-link">
+                                #opensource
+                            </a>
+                        </div>
+
+                        <div class="container">
+                          <h5 class="pt-3">
+                            Author: <a href="#">David Omotayo</a>
+                          </h5>
+                          <h3 class="pt-3">
+                            Introduction
+                          </h3>
+                          <p class="pt-2">
+                            Forms are one of the most adaptable elements in web development. They come in distinct structures for various use cases.
+                          </p>
+                          <p class="pt-2">
+                            However, due to the sporadic complexity of the information they collect, they tend to grow larger with several fields, which can be a big turnoff for most users.
+                          </p>
+                          <p class="pt-2">
+                            To solve this user experience issue, developers devised a dynamic form, a simple yet complex form that can grow in size on command.
+                          </p>
+                          <p class="pt-2">
+                            This guide will teach us how to create a dynamic form using Ant design and refine's React template.
+                          </p>
+                          <p class="pt-2">
+                            Steps we'll cover:
+                          </p>
+                          </div>
+
         
 
     } catch (error) {
