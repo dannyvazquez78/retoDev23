@@ -1,8 +1,8 @@
-import { post, get } from './getData.js';
+import { post, getAll } from './getData.js';
 
 const articles = document.getElementById('articles');
 
-get(articles);
+getAll(articles);
 
 
 
