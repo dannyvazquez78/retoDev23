@@ -6,7 +6,7 @@ const divCard = (personaje) => {
     const image = document.createElement('img');
     image.classList.add('card-img-top');
     imagePerfil.src = personaje.post
-    image.appendChild(article)
+    imagePerfil.appendChild(article)
 
     const cardBody = document.createElement('div');
     cardBody.classList.add('card__userDetails', 'd-flex', 'align-items-center', 'mb-2')
