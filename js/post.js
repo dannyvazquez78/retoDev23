@@ -6,72 +6,72 @@ const post = (contenido) => {
     const imagePost = document.createElement('img')
     imagePost.classList.add('rounded-top')
     imagePost.src = contenido.image
-    imagePost.appendChild(card)
+    card.appendChild(imagePost)
 
     const cardBody = document.createElement('div')
     cardBody.classList.add('card-body')
-    cardBody.appendChild(card)
+    card.appendChild(cardBody)
 
     const containerPerfil = document.createElement('div')
     containerPerfil.classList.add('container')
-    containerPerfil.appendChild(cardBody)
+    cardBody.appendChild(containerPerfil)
 
     const containerImage = document.createElement('div');
     containerImage.classList.add('container');
-    containerImage.appendChild(containerPerfil);
+    containerPerfil.appendChild(containerImage);
 
     const imagePerfil = document.createElement('img');
     imagePerfil.classList.add('rounded-circle', 'float-start', 'me-4');
     imagePerfil.style.width = '3rem';
-    imagePerfil.appendChild(containerPerfil);
+    containerPerfil.appendChild(imagePerfil);
 
     const descripcion = document.createElement('div');
     descripcion.classList.add('container')
-    descripcion.appendChild(cardBody)
+    cardBody.appendChild(descripcion)
 
     const name = document.createElement('h5')
-    name.appendChild(descripcion)
+    descripcion.appendChild(name)
 
     const date = document.createElement('small')
-    date.appendChild(descripcion)
+    descripcion.appendChild(date)
 
     const titulo = document.createElement('h1')
     titulo.classList.add('card-title', 'mt-2')
-    titulo.appendChild(cardBody)
+    cardBody.appendChild(titulo)
 
     const linkTitulo = document.createElement('a')
     linkTitulo.classList.add('card-link', 'text-muted', 'text-decoration-none')
     linkTitulo.textContent = contenido.titulo
-    linkTitulo.appendChild(titulo)
+    titulo.appendChild(linkTitulo)
 
     const hashtags = document.createElement('ul');
     hashtags.classList.add('d-flex', 'flex-wrap', 'p-0', 'ms-4')
-    hashtags.appendChild(cardBody)
+    cardBody.appendChild(hashtags)
 
     const listaItem1 = document.createElement('li')
     listaItem1.textContent = "#weekly"
-    listaItem1.appendChild(hashtags)
+    hashtags.appendChild(listaItem1)
 
     const listaItem2 = document.createElement('li')
     listaItem2.textContent =  "#webdev"
-    listaItem2.appendChild(hashtags)
+    hashtags.appendChild(listaItem2)
 
     const listaItem3 = document.createElement('li')
     listaItem3.textContent = "#beginners"
-    listaItem3.appendChild(hashtags)
+    hashtags.appendChild(listaItem3)
 
     const postContenido = document.createElement('div')
     postContenido.classList.add('container')
-    postContenido.appendChild(cardBody)
+    cardBody.appendChild(postContenido)
 
     const autorName = document.createElement('h5')
     autorName.classList.add('pt-3')
     autorName.textContent = 'Author:' + contenido.name;
-    autorName.appendChild(postContenido)
+    postContenido.appendChild(autorName)
 
     const article = document.createElement('p')
     article.textContent = contenido.post;
-    article.appendChild(postContenido)
+    postContenido.appendChild(article)
 
     return card;
 
