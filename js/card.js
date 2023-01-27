@@ -16,7 +16,6 @@ const divCard = (personaje) => {
     imagePerfil.src = personaje.perfil;
     imagePerfil.appendChild(cardBody);
 
-
     const divPerfil = document.createElement('div');
     divPerfil.classList.add('d-flex', 'flex-column');
     divPerfil.appendChild(cardBody)
