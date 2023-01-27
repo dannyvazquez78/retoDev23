@@ -3,17 +3,18 @@ const divCard = (personaje) => {
     const article = document.createElement('article');
     article.classList.add('card', 'm-3');
 
+
     const image = document.createElement('img');
     image.classList.add('card-img-top');
-    imagePerfil.src = personaje.post
-    imagePerfil.appendChild(article)
+    image.src = ""
+    image.appendChild(article)
 
     const cardBody = document.createElement('div');
     cardBody.classList.add('card__userDetails', 'd-flex', 'align-items-center', 'mb-2')
     cardBody.appendChild(article)
 
     const imagePerfil = document.createElement('img')
-    imagePerfil.src = personaje.perfil;
+    imagePerfil.src = "#"
     imagePerfil.appendChild(cardBody);
 
 
@@ -23,16 +24,15 @@ const divCard = (personaje) => {
 
     const nombrePerfil = document.createElement('p');
     nombrePerfil.classList.add('fw-bold');
-    nombrePerfil.textContent = element.firstName
+    nombrePerfil.textContent = personaje.firstName
     nombrePerfil.appendChild(divPerfil)
 
     const fechaPerfil = document.createElement('p');
     fechaPerfil.classList.add('time');
-    fechaPerfil.textContent = element.date
+    fechaPerfil.textContent = personaje.date
     fechaPerfil.appendChild(divPerfil)
 
     const linkPost = document.createElement('a')
-    linkPost.classList.add('')
     linkPost.appendChild(cardBody)
 
     const tituloPost = document.createElement('h3')
@@ -74,6 +74,7 @@ const divCard = (personaje) => {
 
     const pReaccion = document.createElement('p');
     pReaccion.textContent = 'Reactions'
+    pReaccion.appendChild(divReaccion);
 
     const divComentario = document.createElement('div')
     divComentario.classList.add('d-flex')
@@ -90,5 +91,6 @@ const divCard = (personaje) => {
     return article;
 
 }
+
 
 export  { divCard }
