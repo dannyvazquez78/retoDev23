@@ -91,4 +91,5 @@ const divCard = (personaje) => {
 
 }
 
+
 export  { divCard }
